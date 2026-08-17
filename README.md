@@ -27,11 +27,12 @@ To condition the cross-modal image pairs for deep learning model training, an en
 #### 3. Forward Image Enhancement (Ground Truth Conditioning)
 
 To optimize the structural visibility of collagen fibres for model supervision, target forward images underwent rigorous enhancement: 
-<img width="721" height="194" alt="image" src="https://github.com/user-attachments/assets/2642fe0f-9480-4842-9348-79171aa2fa11" />
 
 * **CLAHE Application:** Implemented Contrast-Limited Adaptive Histogram Equalisation to maximize local structural contrast.
 * **Binarization Thresholding:** Applied a strict 0.7 intensity threshold to segment clean collagen fiber boundaries.
 * **Noise Reduction:** Deployed a Median Filter to eliminate lingering background high-frequency noise artifacts.
+  
+<img width="721" height="194" alt="image" src="https://github.com/user-attachments/assets/2630ebec-018c-410b-8cf2-43ab96eb52e4" />
 
 #### 4. Data Partitioning
 
