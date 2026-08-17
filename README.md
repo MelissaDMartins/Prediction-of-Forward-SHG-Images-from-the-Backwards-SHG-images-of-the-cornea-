@@ -7,3 +7,4 @@ The goal of this project is to achieve accurate, interpretation of collagen stru
 To address this clinical need, a U-Net deep learning architecture was developed to predict forward SHG images from backward SHG scattering data. The model focuses primarily on reconstructing and predicting collagen fibre orientation using the clinically accessible backward SHG signal, eliminating the need for more invasive or complex forward-imaging modalities.
 
 ### Dataset Examples
+<img width="942" height="505" alt="image" src="https://github.com/user-attachments/assets/7a71758c-e9db-40b8-a51f-8775cb844616" />
