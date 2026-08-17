@@ -58,5 +58,5 @@ To verify that the model was learning genuine biological structures rather than 
 * **Fiber Alignment:** Validation confirmed broad structural similarities in the dominant collagen fibre orientation between the U-Net's predicted outputs and the true forward-scattering ground truth images.
 * **Clinical Significance:** This alignment proves the model successfully mapped hidden structural features from the backward signal, paving the way to make highly interpretable, advanced collagen data accessible in fast-paced clinical settings.
 * While the Binary Prediction was evaluated , the Continuous Prediction ( raw model outputs) proved superior at retaining organic structural boundaries and smooth collagen fiber orientation gradients.
-<img width="571" height="246" alt="image" src="https://github.com/user-attachments/assets/fc79a87d-4431-4941-83be-053933aefb1d" />
+           <img width="716" height="410" alt="image" src="https://github.com/user-attachments/assets/fc79a87d-4431-4941-83be-053933aefb1d" />
 
