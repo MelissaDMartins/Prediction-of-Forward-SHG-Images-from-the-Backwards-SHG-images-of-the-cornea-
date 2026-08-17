@@ -24,14 +24,15 @@ To condition the cross-modal image pairs for deep learning model training, an en
 * **Global Normalisation:** Patches were dynamically rescaled to a 0–1 range using p1 and p99 intensity percentiles to eliminate extreme sensor noise.
 * **Patch Extraction:** Z-slices were tiled into uniform 256 × 256 non-overlapping patches to maximize training sample volume.
 
-### 3. Forward Image Enhancement (Ground Truth Conditioning)
+#### 3. Forward Image Enhancement (Ground Truth Conditioning)
 
 To optimize the structural visibility of collagen fibres for model supervision, target forward images underwent rigorous enhancement: 
+<img width="721" height="194" alt="image" src="https://github.com/user-attachments/assets/2642fe0f-9480-4842-9348-79171aa2fa11" />
 
 * **CLAHE Application:** Implemented Contrast-Limited Adaptive Histogram Equalisation to maximize local structural contrast.
 * **Binarization Thresholding:** Applied a strict 0.7 intensity threshold to segment clean collagen fiber boundaries.
 * **Noise Reduction:** Deployed a Median Filter to eliminate lingering background high-frequency noise artifacts.
 
-### 4. Data Partitioning
+#### 4. Data Partitioning
 
 * **Split Ratio:** Managed an exact **80% Training / 10% Validation / 10% Test** split to ensure rigorous, unbiased model evaluation.
