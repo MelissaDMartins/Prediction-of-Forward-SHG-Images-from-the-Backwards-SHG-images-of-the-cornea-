@@ -12,12 +12,12 @@ To address this clinical need, a U-Net deep learning architecture was developed 
 
 ### Dataset & Pre-processing Pipeline
 
-## 1. Dataset Characteristics
+#### 1. Dataset Characteristics
 
 * **Source Material:** 310 paired Second Harmonic Generation (SHG) images.
 * **Biological Model:** Acquired from 7 pressurized intact porcine corneas.
 
-## 2. Image Pre-processing Pipeline
+#### 2. Image Pre-processing Pipeline
 
 To condition the cross-modal image pairs for deep learning model training, an end-to-end data pipeline was developed: 
 
