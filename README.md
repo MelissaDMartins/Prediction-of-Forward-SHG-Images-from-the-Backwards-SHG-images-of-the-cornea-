@@ -7,8 +7,8 @@ The goal of this project is to achieve accurate, interpretation of collagen stru
 To address this clinical need, a U-Net deep learning architecture was developed to predict forward SHG images from backward SHG scattering data. The model focuses primarily on reconstructing and predicting collagen fibre orientation using the clinically accessible backward SHG signal, eliminating the need for more invasive or complex forward-imaging modalities.
 
 ### Dataset Examples
-
-<img width="716" height="410" alt="image" src="https://github.com/user-attachments/assets/bdf7e0f3-2a45-4381-803a-15d40b9d974c" />
+<p align="center">
+<img width="716" height="410" alt="image" src="https://github.com/user-attachments/assets/bdf7e0f3-2a45-4381-803a-15d40b9d974c"> </p>
 
 ### Dataset & Pre-processing Pipeline
 
@@ -31,8 +31,8 @@ To optimize the structural visibility of collagen fibres for model supervision, 
 * **CLAHE Application:** Implemented Contrast-Limited Adaptive Histogram Equalisation to maximize local structural contrast.
 * **Binarization Thresholding:** Applied a strict 0.7 intensity threshold to segment clean collagen fiber boundaries.
 * **Noise Reduction:** Deployed a Median Filter to eliminate lingering background high-frequency noise artifacts.
-  
-<img width="721" height="194" alt="image" src="https://github.com/user-attachments/assets/2630ebec-018c-410b-8cf2-43ab96eb52e4" />
+<p align="center">
+<img width="721" height="194" alt="image" src="https://github.com/user-attachments/assets/2630ebec-018c-410b-8cf2-43ab96eb52e4"> </p>
 
 #### 4. Data Partitioning
 
@@ -58,5 +58,7 @@ To verify that the model was learning genuine biological structures rather than 
 * **Fiber Alignment:** Validation confirmed broad structural similarities in the dominant collagen fibre orientation between the U-Net's predicted outputs and the true forward-scattering ground truth images.
 * **Clinical Significance:** This alignment proves the model successfully mapped hidden structural features from the backward signal, paving the way to make highly interpretable, advanced collagen data accessible in fast-paced clinical settings.
 * While the Binary Prediction was evaluated , the Continuous Prediction ( raw model outputs) proved superior at retaining organic structural boundaries and smooth collagen fiber orientation gradients.
-           <img width="716" height="410" alt="image" src="https://github.com/user-attachments/assets/fc79a87d-4431-4941-83be-053933aefb1d" />
+<p align="center">
+<img width="560" height="246" alt="Screenshot 2026-08-17 115352" src="https://github.com/user-attachments/assets/c688a691-7276-42dd-86d7-81662c78da98"> </p>
+
 
