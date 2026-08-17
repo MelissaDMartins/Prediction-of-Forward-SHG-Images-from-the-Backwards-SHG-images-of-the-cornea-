@@ -37,3 +37,26 @@ To optimize the structural visibility of collagen fibres for model supervision, 
 #### 4. Data Partitioning
 
 * **Split Ratio:** Managed an exact **80% Training / 10% Validation / 10% Test** split to ensure rigorous, unbiased model evaluation.
+
+### Results & Evaluation
+
+The trained U-Net model was evaluated on a completely held-out test dataset, demonstrating the clear feasibility of predicting complex, forward-scattering collagen structural features directly from a clinically available backward SHG signal. 
+
+### 1. Quantitative Performance Metrics
+
+The model achieved highly robust, consistent baseline scores across the test set: 
+
+* **Dice Similarity Coefficient:** 0.609 ± 0.0087 (proves consistent structural overlap)
+* **Intersection over Union (IoU):** 0.438 ± 0.0090
+* **95th Percentile Hausdorff Distance (HD95):** 5.50px ± 0.64px (confirms low boundary error)
+* **Block-Averaged Intensity Difference:** 0.250 ± 0.0098
+
+### 2. Qualitative Structural Validation (OrientationJ)
+
+To verify that the model was learning genuine biological structures rather than random noise, **OrientationJ analysis** was executed: 
+
+* **Fiber Alignment:** Validation confirmed broad structural similarities in the dominant collagen fibre orientation between the U-Net's predicted outputs and the true forward-scattering ground truth images.
+* **Clinical Significance:** This alignment proves the model successfully mapped hidden structural features from the backward signal, paving the way to make highly interpretable, advanced collagen data accessible in fast-paced clinical settings.
+* While the Binary Prediction was evaluated , the Continuous Prediction ( raw model outputs) proved superior at retaining organic structural boundaries and smooth collagen fiber orientation gradients.
+<img width="571" height="246" alt="image" src="https://github.com/user-attachments/assets/fc79a87d-4431-4941-83be-053933aefb1d" />
+
